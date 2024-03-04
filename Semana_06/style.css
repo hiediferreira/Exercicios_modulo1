@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+}
+
+header{
+    background-image: linear-gradient(to right, aquamarine, transparent);
+    padding: 10px;
+    text-align: center;
+}
+
+main{
+    margin: 10px;
+}
+
+p{
+    font-size: 1.2em;
+}
+
+footer{
+    background-color: rgba(127, 255, 212, 0.637);
+    text-align: right;
+    padding: 10px 20px;
+    font-style: italic;
+}
