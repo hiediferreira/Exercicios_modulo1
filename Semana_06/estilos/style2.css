@@ -16,12 +16,13 @@ h1, p, form{
     padding: 10px;
 }
 
-form{
+div#form{
     border: 1px solid black;
     border-radius: 10px;
     width: 500px;
     height: 150px;
     margin: auto;
+    padding-top: 30px;
 }
 
 input{
