@@ -1,0 +1,260 @@
+@charset "UTF-8";
+
+:root{
+    --azulClaro: #87d1c5;
+    --cinzaClaro: #a19896
+}
+
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body, html{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+.margBt-14{
+    margin-bottom: 14px;
+}
+
+/* Mobile First*/
+@media all{
+    #container{
+        /* Display */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #main{
+        background-image: linear-gradient(to bottom, white, #bbebe3, rgba(255, 255, 255, 0.842));       
+        width: 80vw;
+        border: none;
+        border-radius: 20px;
+        /* Display */
+        display: grid;
+        grid-template-columns: 100%;
+        /*1 coluna*/
+        justify-content: center;
+        margin: 15px 0;
+    }
+
+    #main1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #main1 a{
+        text-decoration: none;
+        font-weight: bold;
+    }
+    
+    #main1 a:hover{
+        font-size: 1.1rem;
+    }
+
+    #main1 img{
+        width:150px;
+        height:150px;
+        margin-bottom: 28px;
+    }
+
+    #main2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    input, button{
+        width: 250px;
+        height: 40px;
+        border-radius: 10px;
+        border: none;
+    }
+    
+    input{
+        background-color: white;
+        padding-left: 10px;
+        border: 1px solid var(--cinzaClaro);
+    }
+    
+    button{
+        background-color: blue;
+        margin-bottom: 35px;
+    }
+    
+    button>a{
+        color: white;
+    }
+    
+    button>a:hover{  
+        font-size: 1rem;
+    }
+    
+    #icon-password{
+        position: relative;
+        width: 250px;
+        height: 40px;
+    }
+    
+    #icon-password input{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    
+    #icon img{
+        position: absolute;
+        top: 5px;
+        right: 10px;    
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+
+    form p{
+        text-align: right;
+    }
+    
+    form p>a{
+        color: black;
+        opacity: 0.7;
+    }
+    
+    form p>a:hover{
+        opacity: 1;    
+        font-size: 1.1rem;
+    }
+    
+    div#hr{
+        display: flex;    
+        justify-content: space-evenly;
+    }
+    
+    hr{
+        width: 80px;  
+        margin: 10px;    
+    }
+    
+    .accounts{
+        background-color: white;        
+        width: 250px;
+        height: 40px;
+        border-radius: 10px;
+        border: 1px solid var(--cinzaClaro);
+    
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    .accounts p{
+        align-self: center;
+    }
+    
+    .accounts p>a{
+        font-size: 0.8rem;
+        color: black;
+    }
+    
+    .accounts p>a:hover{
+        font-size: 0.9rem;
+    }
+    
+    .accounts img#google{
+        position: absolute;
+        top: 10px;
+        left: 20px    
+    }
+    
+    .accounts img#face{
+        position: absolute;
+        top: 5px;
+        left: 15px;    
+    }
+}
+
+/* Telas médias*/
+@media screen and (min-width:768px){
+    #container{
+        height: 100%;
+        background-image: linear-gradient(to right, var(--azulClaro), var(--cinzaClaro));
+        /* Display */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #main{
+        background-image: linear-gradient(to bottom, white, #bbebe3, rgba(255, 255, 255, 0.842));
+        width: 90vw;
+        border: none;
+        border-radius: 20px;
+        /* Display */
+        display: grid;
+        grid-template-columns: 1fr 1fr; /*2 colunas, 1ª dobro da 2ª*/
+        grid-template-rows: 95%; /*95% da altura da tela*/
+        align-content: center; /*Eixo x*/
+    }
+
+    #main1 img{
+        width:200px;
+        height:250px;
+    }
+
+    #main2{
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    input{
+        background-color: #87d1c559;
+        padding-left: 10px;
+    }
+
+    input, button{
+        border: none;
+    }
+}
+
+/* Telas maiores*/
+@media screen and (min-width:992px){
+    #container{
+        height: 100%;
+        background-image: linear-gradient(to right, var(--azulClaro), var(--cinzaClaro));
+        /* Display */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #main{
+        background-image: linear-gradient(to bottom, white, #bbebe3, rgba(255, 255, 255, 0.842));
+        width: 80vw;
+        height: 80vh;
+        border: none;
+        border-radius: 20px;
+        /* Display */
+        display: grid;
+        grid-template-columns: 2fr 1fr; /*2 colunas, 1ª dobro da 2ª*/
+        grid-template-rows: 95%; /*95% da altura da tela*/
+        align-content: center; /*Eixo x*/
+    }
+
+    #main2{
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

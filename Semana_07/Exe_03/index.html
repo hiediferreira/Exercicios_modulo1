@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="stylesheet" href="CSS/style_login.css">
+</head>
+<body>
+    <div id="container">
+        <div id="main">
+            <div id="main1">
+                <h1>Sign In to this session</h1>
+                <p>If tou don't have an account, <br>
+                    You can <a href="#">Register here!</a></p>
+                <img src="imagens/img-login.png" alt="imagem ilustrativa" width="200px" height="250px">
+            </div>
+
+            <div id="main2">
+                <form>
+                    <input class="margBt-14" type="email" placeholder="Email address" required id="id-email">
+                    <div id="icon-password">
+                        <input type="password" class="margBt-14" placeholder="Password" id="input-senha" required>
+                        <div id="icon">
+                            <img src="imagens/olho.png" id="btn-senha" alt="ícone olho" onclick="mostrar()">
+                        </div>
+                    </div>
+                    <p>
+                        <a href="#">Forgot password?</a>
+                    </p>
+                    <button onclick="entrar()">
+                        <a href="#">Sign In</a>
+                    </button>
+                </form>
+
+                <div id="hr" class="margBt-14">
+                    <hr> Or <hr>
+                </div>
+
+                <section  >                    
+                    <div class="accounts margBt-14" >
+                        <img id="google" src="imagens/google.png" alt="logo facebook" width="20px" height="20px">
+                        <p><a href="">Continue with Google</a></p>
+                    </div>
+                    <div class="accounts">
+                        <img id="face" src="imagens/facebook.png" alt="logo Google" width="30px" height="30px">
+                        <p><a href="">Continue with Facebook</a></p>
+                    </div>
+                </section>               
+            </div>
+    </div>
+
+    <script src="JS/script.js"></script>
+</body>
+</html>
