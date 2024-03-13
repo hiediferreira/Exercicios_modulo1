@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body, html{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+@media all{
+    #container{
+        background-color: #9fdbd1;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #main{
+        background-color: white;
+        height: 98vh;
+        width: 90vw;
+        border-radius: 20px;
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-template-rows: 100%;
+        align-content: center;
+        justify-content: center;
+    }
+    
+    #logo{
+        text-align: center;
+        background-image: url(../imagens/pexels-sean-whang-804269.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+    
+    #logo>h3{
+        color: rgba(255, 255, 255, 0.877);
+        text-align: center;
+    }
+    
+    #main-form{
+        margin-left: 20px;
+    }
+    
+    form{  
+        display: flex;
+        flex-direction: column;
+    }
+    
+    input, button{
+        width: 250px;
+        height: 36px;
+        border-radius: 10px;
+        border: 1px solid #a19896;
+    }
+
+    input{
+        padding-left: 10px;
+    }
+    
+    button{
+        margin-top: 25px;
+        width: 100px;
+        background-color: black;    
+    }
+    
+    button a{
+        color: white;
+    }
+    
+    button:hover{
+        font-size: 1rem;
+    }
+    
+    label{
+        margin-top: 7px;
+    }
+    
+    #main-form p>a{
+        color: black;
+        font-weight: bold;
+    }
+    
+    #main-form p>a:hover{
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 768px){
+    #main{
+        background-color: white;
+        height: 90vh;
+        width: 80vw;
+        border-radius: 20px;
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-template-rows: 100%;
+        align-content: center;
+        justify-content: center;
+    }
+
+    #logo>h3{
+        color: rgba(255, 255, 255, 0.877);
+        text-align: right;
+        margin: 30px 10px;
+    }
+}
+
+
