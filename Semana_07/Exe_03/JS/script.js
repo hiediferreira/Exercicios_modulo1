@@ -20,3 +20,7 @@ function entrar(){
         alert('Login com sucesso!')
     }
 }
+
+function contaNova(){
+    alert('Cadastrado com sucesso!')
+}

@@ -27,16 +27,23 @@
                     <label for="id-email">Email</label>
                     <input type="email" id="id-email" placeholder="Please enter your email">
                     <label for="id-pass">Password</label>
-                    <input type="password" id="id-pass" placeholder="Please create your password">
+                    <div id="icon-password">
+                        <input type="password" placeholder="Please create your password" id="input-senha">
+                        <div id="icon">
+                            <img src="imagens/olho.png" id="btn-senha" alt="ícone olho" onclick="mostrar()">
+                        </div>
+                    </div>
                     <label for="id-phone">Phone number</label>
                     <input type="tel" id="id-phone" placeholder="Please enter your phone number">
-                    <button><a href="#">Sign Up</a></button>
+                    <button onclick="contaNova()"><a href="#">Sign Up</a></button>
                 </form>
                 <p>
-                    Already have an account? <a href="#">Login</a>
+                    Already have an account? <a href="../index.html">Login</a>
                 </p>
             </div>
         </div>
     </div>
+
+    <script src="../JS/script.js"></script>
 </body>
 </html>
