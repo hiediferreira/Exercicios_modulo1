@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semana 08</title>
+
+    <style>
+        body{
+            text-align: center;
+        }
+
+        div{
+            width: 400px;
+            height: 300px;
+            background-color: rgb(162, 104, 216);
+            border-radius: 10px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        button{
+            width: 200px;
+            height: 40px;
+            border-radius: 10px;
+            border: none
+        }
+
+        .new-color{
+            background-color: brown;
+        }
+
+        p#text{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercícios Semana 08</h1>
+    <h2>Manipulando DOM</h2>
+    <h3>** Selecionando elemento pelo ID **</h3>
+    <p>
+        Exercício 01 - Selecione um elemento de uma página HTML pelo seu ID e altere sua cor de fundo.
+    </p>
+    <div id="color">
+        <button onclick="newStyle()">Clique aqui!</button>
+        <p id=text></p>
+    </div>    
+
+    <script>
+        function newStyle(){
+            let element = document.getElementById('color') //id da div
+            element.setAttribute('class','new-color') //add uma classe à div para mudar sua cor
+            console.log(element)
+            let text = document.getElementById('text')  //id do elemento <p>
+            text.textContent = 'Mudei de cor!' //texto que será escrito ao mudar a cor
+        }
+    </script>
+</body>
+</html>
