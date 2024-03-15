@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semana 08</title>
+
+    <style>
+        body{
+            text-align: center;
+        }
+        button{
+            width: 100px;
+            height: 40px;
+            border-radius: 30px;
+            background-color: rgb(236, 56, 116);
+            color: rgba(255, 255, 255, 0.842);
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Exercícios Semana 08</h1>
+    <h2>Manipulando DOM</h2>
+    <h3>** Selecionando elemento pelo ID **</h3>
+    <p>
+        Exercício 02 - Selecione todos os elementos de uma página HTML por sua classe e altere o texto desses elementos.
+    </p>
+    <p class="paragrafo">Parágrafo 1 possui class="paragrafo"!</p>
+    <p class="paragrafo">Parágrafo 2 possui class="paragrafo"!</p>
+    <p id="paragrafo">Parágrafo 3 possui id="paragrafo"!</p>
+    <p class="paragrafo">Parágrafo 4 possui class="paragrafo"!</p>
+    <p class="paragrafo">Parágrafo 5 possui class="paragrafo"!</p>
+    <p>Parágrafo 6 não possui classe e nem id!</p>
+
+    <button id="btn">Clique aqui!</button>
+
+    <script>
+        function clique(){
+            let todosParagrafos = document.getElementsByClassName('paragrafo') //pega todos os <p> com class='paragrafo'
+            for(let i = 0; i < todosParagrafos.length; i++){                   //para que todos sejam alterados
+                todosParagrafos[i].textContent = 'Este parágrafo possui class="parágrafo"!'
+                todosParagrafos[i].style.cssText = 'color:rgb(236, 56, 116); font-weight:bold;'
+            }
+        }
+
+        let btn = document.querySelector('button#btn')
+        btn.addEventListener('click', clique)  //fica escutando o clicar do botão
+    </script>
+</body>
+</html>
