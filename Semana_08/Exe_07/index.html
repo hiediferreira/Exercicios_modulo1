@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exe 07</title>
+
+    <style>
+        body{
+        text-align: center;
+        }
+
+        div#container{
+            margin: auto;
+            width: 400px;
+            height: 200px;    
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: justify;
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 4px;
+        }
+
+        button{
+            margin-top: 20px;
+            width: 150px;
+            height: 30px;
+            border-radius: 4px;
+            background-color: rgba(153, 205, 50, 0.829);
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+        }
+
+        .style-container{
+            background-color:rgb(148, 219, 24);
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercícios Semana 08</h1>
+    <h2>Manipulando DOM</h2>
+    <h3>** Adicionar classe**</h3>
+    <p>
+        Exercício 07 - Remova uma classe de um elemento específico na página HTML. <br>
+    </p>
+
+    <div id="container" class="style-container">
+        <p>Ao clicar no botão, será removido, via JavaScript, a classe "style-container" que é responsável pela cor da div.</p>
+    </div>
+
+    <button onclick="removeClass()">Remover class</button>
+
+    <script>
+        // Praticando arrow function :D //
+        removeClass = () => {
+            let div = document.querySelector('div#container')
+            div.removeAttribute('class')
+        }
+    </script>
+</body>
+</html>
