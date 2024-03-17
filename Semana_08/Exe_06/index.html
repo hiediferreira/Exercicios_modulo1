@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exe 06</title>
+
+    <style>
+        body{
+        text-align: center;
+        }
+
+        div#container{
+            margin: auto;
+            width: 400px;
+            height: 200px;    
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: justify;
+            padding: 10px;
+            border: 1px dashed rgb(32, 16, 173);
+        }
+
+        button{
+            margin-top: 20px;
+            width: 150px;
+            height: 30px;
+            border-radius: 4px;
+            color: rgb(32, 16, 173);
+            background-color: rgba(0, 0, 255, 0.247);
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+        }
+
+        .style-container{
+            background-color: rgb(170, 14, 66);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercícios Semana 08</h1>
+    <h2>Manipulando DOM</h2>
+    <h3>** Adicionar classe**</h3>
+    <p>
+        Exercício 06 - Adicine uma nova classe a um elemento específico na página HTML. <br>
+    </p>
+
+    <div id="container">
+        <p>Ao clicar no botão, será adicionado, via JavaScript, a classe "style-container" que será responsável por mudar a cor da div.</p>
+    </div>
+
+    <button onclick="addClass()">Adicionar class</button>
+
+    <script>
+        function addClass(){
+            let div = document.querySelector('div#container')
+            div.setAttribute('class','style-container')
+            div.innerHTML = 'Classe adicionada!'
+
+            //Mudando o botao após pressionado, sem declarar variável
+            document.querySelector('button').setAttribute('style', 'background-color:rgb(170, 14, 66, 0.247); color:rgb(170, 14, 66)')
+        }
+    </script>
+</body>
+</html>
