@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 04</title>
+
+    <style>
+        body{
+            text-align: center;
+        }
+
+        div{
+            margin: auto;
+            width: 320px;
+            height: 160px;
+            border: 1px solid rgb(240, 13, 51);
+            box-shadow: 5px 5px 6px 1px rgba(0, 0, 0, 0.6);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercícios Semana 08</h1>
+    <h2>Manipulando DOM</h2>
+    <h3>** Removendo elemento filho**</h3>
+    <p>
+        Exercício 04 - Remova um elemento filho de um elemento pai na página HTML. <br>
+    </p>
+
+    <div id="container">
+        <p>
+            Sou um parágrafo, elemento filho da div! <br>
+            Quando mouse entrar na div, serei removido!
+        </p>
+    </div>
+
+    <script>
+        let div = document.querySelector('div#container')
+
+        function myFunction(){
+            let p_filho = document.querySelector('div#container p')
+            div.removeChild(p_filho)
+        }
+
+        div.addEventListener('mouseover', myFunction)
+        
+    </script>
+</body>
+</html>
