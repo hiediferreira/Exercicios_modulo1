@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exe 08</title>
+    <title>Exe 09</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,7 +14,7 @@
         Exercício 08 - Adicione um novo atributo a um elemento na página HTML. <br>
     </p>
 
-    <form>
+    <form onload="recarregar()">
         <label for="id-name">Nome</label>
         <input type="text" placeholder="Seu nome" id="id-nome">
         <label for="id-secondName">Sobrenome</label>
@@ -24,7 +24,7 @@
         <label for="id-email">E-mail</label>
         <input type="email" placeholder="nome@endereco.com" id="id-email">
 
-        <button onclick="disableButton()">ENVIAR</button>        
+        <button onclick="disableButton()" >ENVIAR</button>        
     </form>
 
     <script>
@@ -33,9 +33,15 @@
         //     btn.setAttribute('disabled', 'disabled')
         // }
 
-        disableButton = () => {
-            let btn = document.querySelector('button')
+        let btn = document.querySelector('button')
+
+        disableButton = () => {            
             btn.setAttribute('disabled', 'disabled')
+        }
+
+        recarregar = () =>{
+            //btn.removeAttribute('disabled')
+            btn.style.backgroundColor = 'red'
         }
     </script>
 </body>

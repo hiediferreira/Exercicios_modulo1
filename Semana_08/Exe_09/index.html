@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exe 09</title>
+
+    <style>
+        body{
+            text-align: center;
+        }
+
+        div{
+            cursor: pointer;
+            margin: auto;
+            width: 400px;
+            border: 1px dotted black;
+            padding: 20px;
+            background-color: rgba(127, 255, 212, 0.575);
+        }
+
+        p#text{
+            font-size: 20px;
+            color: blue;
+            background-color: rgba(0, 0, 255, 0.116);
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercícios Semana 08</h1>
+    <h2>Manipulando DOM</h2>
+    <h3>** Removendo atributo**</h3>
+    <p>
+        Exercício 09 - Remova um atributo de um elemento na página HTML. <br>
+    </p>
+
+    <div>
+        <p id="text">
+            Este é um exercício simples para exercitar a remoção de atributos.
+            Quando o mouse clicar na div, o atributo id="text" será removido, removendo as estilizações do elemento "p".
+        </p>
+    </div>
+
+    <script>
+        let div = document.querySelector('div')
+        function removeColor(){
+            let prgfo = document.querySelector('p#text')
+            prgfo.removeAttribute('id')
+        }
+
+        div.addEventListener('click', removeColor)
+    </script>
+</body>
+</html>
