@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+body{
+    text-align: center;
+}
+
+.number{
+    font-size: 40px;    
+}
+
+.container{
+    margin: auto;
+    width: 80vw;
+    height: 300px;
+
+    border: 2px solid black;
+    border-radius: 15px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}

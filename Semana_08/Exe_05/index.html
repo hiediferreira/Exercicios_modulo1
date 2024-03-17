@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 05</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Exercícios Semana 08</h1>
+    <h2>Manipulando DOM</h2>
+    <h3>** Editar por classe**</h3>
+    <p>
+        Exercício 05 - Altere o estilo de todos os elementos de uma página HTML que tenham uma determinada classe. <br>
+    </p>
+
+    <div class="container">
+        <div class="content number">1</div>
+        <div class="content number">2</div>
+        <div class="content number">3</div>
+        <div class="content number">4</div>
+        <div class="content number">5</div>
+        <div class="content number">6</div>
+    </div>
+    <p>Ao clicar na div principal, os quadrados menores mudarão de cor!</p>
+
+    <script>
+        let div = document.getElementsByClassName('container')[0]
+
+        function editColor(){
+            let elements = document.getElementsByClassName('content')
+
+            for(let i=0; i<elements.length; i++){
+                elements[i].style.cssText = 'background-color: red;'
+            }
+        }
+
+        div.addEventListener('click', editColor)
+    </script>
+</body>
+</html>
