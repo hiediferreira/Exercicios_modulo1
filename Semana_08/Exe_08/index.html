@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exe 08</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Exercícios Semana 08</h1>
+    <h2>Manipulando DOM</h2>
+    <h3>** Adicionando atributo**</h3>
+    <p>
+        Exercício 08 - Adicione um novo atributo a um elemento na página HTML. <br>
+    </p>
+
+    <form>
+        <label for="id-name">Nome</label>
+        <input type="text" placeholder="Seu nome" id="id-nome">
+        <label for="id-secondName">Sobrenome</label>
+        <input type="text" placeholder="Seu sobrenome" id="id-secondName">
+        <label for="id-phone">Telefone</label>
+        <input type="tel" placeholder="(+55) (xx)(xxxxx-xxxx)" id="id-phone">
+        <label for="id-email">E-mail</label>
+        <input type="email" placeholder="nome@endereco.com" id="id-email">
+
+        <button onclick="disableButton()">ENVIAR</button>        
+    </form>
+
+    <script>
+        // function disableButton(){
+        //     let btn = document.querySelector('button')
+        //     btn.setAttribute('disabled', 'disabled')
+        // }
+
+        disableButton = () => {
+            let btn = document.querySelector('button')
+            btn.setAttribute('disabled', 'disabled')
+        }
+    </script>
+</body>
+</html>
