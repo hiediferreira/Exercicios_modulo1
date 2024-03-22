@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header></header>    
+    <section id="fruits">
+        <div class="coloumn">            
+            <img src="imagens/pexels-abacate.jpg" alt="imagem-ilustrativa" class="img-fruits">
+            Cod: 01 - Abacate
+        </div>
+
+        <div class="coloumn">            
+            <img src="imagens/pexels-abacaxi.jpg" alt="imagem-ilustrativa" class="img-fruits">
+            Cod: 02 - Abacaxi
+        </div>
+
+        <div class="coloumn">            
+            <img src="imagens/pexels-banana.jpg" alt="imagem-ilustrativa" class="img-fruits">
+            Cod: 03 - Banana
+        </div>
+
+        <div class="coloumn">            
+            <img src="imagens/pexels-coco-verde.jpg" alt="imagem-ilustrativa" class="img-fruits">
+            Cod: 04 - Coco verde
+        </div>
+
+        <div class="coloumn">            
+            <img src="imagens/pexels-kiwi.jpg" alt="imagem-ilustrativa" class="img-fruits">
+            Cod: 05 - Kiwi
+        </div>
+
+        <div class="coloumn">            
+            <img src="imagens/pexels-maca.jpg" alt="imagem-ilustrativa" class="img-fruits">
+            Cod: 06 - Maçã
+        </div>
+
+        <div class="coloumn">            
+            <img src="imagens/pexels-morango.jpg" alt="imagem-ilustrativa" class="img-fruits">
+            Cod: 07 - Morango
+        </div>
+
+        <div class="coloumn">            
+            <img src="imagens/pexels-pitaya.jpg" alt="imagem-ilustrativa" class="img-fruits">
+            Cod: 08 - Pitaya
+        </div>
+
+        <div class="coloumn">            
+            <img src="imagens/pexels-tangerina.jpg" alt="imagem-ilustrativa" class="img-fruits">
+            Cod: 09 - Tangerina
+        </div>
+
+        <div class="coloumn">            
+            <img src="imagens/pexels-uva.jpg" alt="imagem-ilustrativa" class="img-fruits">
+            Cod: 10 - Uva
+        </div>          
+    </section>
+
+    <div class="container">
+        <div class="select style">
+            <h3>Selecione pelo código ou pelo nome da fruta</h3>
+            <div id="form">
+                <div>
+                    <input type="text" placeholder="Informe a fruta desejada" required id="input-fruta">
+                    <button id="btn-consultar" onclick="consultarPreco()">Consultar preço</button>
+                </div>
+                <p id="texto"><!--Aqui vai aparecer o preço da fruta informada--></p>
+                <button id="btn-add" onclick="addCarrinho()">Adicionar ao carrinho</button>                
+            </div>          
+        </div>
+
+        <div class="shopping style">
+            <img src="imagens/cart-solid-24.png" alt="ícone carrinho de compras">
+            <h3>Carrinho de compras</h3>
+            <div id="lista-compras">
+                <!--Aqui vai aparecer a lista de compras-->
+                <ul id="nome-fruta" style="text-align: left;">                    
+                    <li></li> <!--Aqui vai as frutas-->
+                </ul>
+                <ul id="valor-fruta" style="text-align: right;">
+                    <li></li> <!--Aqui vai o valor das frutas-->
+                </ul>
+            </div>
+            <div id="lista-total">
+                <h3>Total</h3>
+                <h3 id="soma">R$0,00</h3>
+            </div>
+    </div>
+
+    <script src="script2.js"></script>
+</body>
+</html>
